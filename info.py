@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['29127726'])
-API_HASH = environ['b25483bdec0d64a73899ee8ede66cd40']
+API_ID = int(environ['20932503'])
+API_HASH = environ['4742289cfae50c92d8de04b4daae2c64']
 BOT_TOKEN = environ['']
 
 # Bot settings
@@ -43,8 +43,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
 # MongoDB information
 SECONDDB_URI = environ.get('SECONDDB_URI', None)
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://raazarya81718171:<raazarya81718171>@cluster0.vbmvejf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Raaz")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bhaiyajiraj44:bhaiyajiraj44@cluster0.0sdcv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -59,11 +58,11 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Mix_Cinema_Box')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Latest_movies_freeOnNet')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Five_Sec_Group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/BackUp_For_you')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Mix_Cinema_Box')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Five_Sec_Group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
